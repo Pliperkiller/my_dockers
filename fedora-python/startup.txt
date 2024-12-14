@@ -1,0 +1,5 @@
+Buildear imagen desde dockerfile:
+docker build -t fedora-python .
+
+
+docker run -it -p 8888:8888 fedora-python:latest

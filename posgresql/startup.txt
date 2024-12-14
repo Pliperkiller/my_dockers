@@ -1,0 +1,9 @@
+Iniciar contenedor con puerto 5000 expuesto
+docker run --name postgres-db -e POSTGRES_USER=eleftheros -e POSTGRES_PASSWORD=aethos -e POSTGRES_DB=hamal -p 5000:5432 -d postgres
+
+iniciar terminal de contenedor 
+docker exec -it postgres-db bash
+
+
+(dentro del contenedor) iniciar conexion a bd
+psql -U eleftheros --password --db hamal
